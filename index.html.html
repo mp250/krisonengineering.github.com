@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Grid Layout</title>
+	<!-- <meta name="viewport" content="width=device-width"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+	/**
+	{
+		margin: 0;
+		padding: 0;
+	}*/
+		main
+		{
+			display: grid;
+			grid-template-columns:repeat(3, 1fr) ;
+			grid-template-rows: 150px 150px 150px;
+			grid-row-gap: 5px;
+			grid-column-gap: 5px;
+			grid-auto-rows: 200px;
+
+		}
+		.items1
+		{
+			background: skyblue;
+			grid-column-start: 1;
+			grid-column-end: 4;
+		}
+		.items2
+		{
+			background:purple ;
+			grid-column-start: 1;
+			grid-column-end: 3;
+			grid-row-start: 2;
+			grid-row-end: 4;
+		}
+		.items3
+		{
+			background:goldenrod ;
+			animation-name: box;
+			animation-delay: 2s;
+			animation-timing-function: ease;
+			animation-duration: 5s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+		@keyframes box
+		{
+			50%{background: red;}
+			100%{background: yellow;}
+		}
+		.items4
+		{
+			background: limegreen ;
+		}
+		.items5
+		{
+			background: orangered ;
+		}
+		.items6
+		{
+			background: rosybrown ;
+			grid-column-start: 2;
+			grid-column-end: 4;
+			grid-row-start: 4;
+			grid-row-end: 7;
+		}
+		.items7
+		{
+			background: blueviolet ;
+		}
+		.items8
+		{
+			background: olive;
+		}
+		.items9
+		{
+			background: black;
+			grid-column-start: 1;
+			grid-column-end: 4;
+		}
+		::-webkit-scrollbar
+		{
+			width: 20px;
+		}
+		::-webkit-scrollbar-track
+		{
+			background: cyan;
+			border-radius: 10px;
+		}
+		::-webkit-scrollbar-thumb
+		{
+			background: linear-gradient(orangered,limegreen,blueviolet);
+			border-radius: 10px;
+			border: 1px solid yellow;
+		}
+		
+	</style>
+</head>
+<body>
+	<main>
+		<div class="items1" style="color: white; text-align: center; padding-top: 40px; font-size: 50px; font-family: bodoni MT Black;"><i>KRISON ENGINEERING WORKS</i></div>
+		<div class="items2" style="text-align: center; font-size:100px">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14771.070061243807!2d73.184513!3d22.248898!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa449e021e906a767!2sKrison%20Engineering%20Works!5e0!3m2!1sen!2sin!4v1630929063320!5m2!1sen!2sin" width="882" height="303" style="border:1px solid black;" allowfullscreen="" loading="lazy"></iframe>
+		</div>
+		<div class="items3" style="font-size: 90px; padding-top:15px">Designation</div>
+		<div class="items4" style="font-size: 30px; padding-top:50px">Assistent Vice President:<mark>N.J.PATEL</mark></div>
+		<div class="items5">
+			<h3 style="text-align:center"><u>"MFG.OF"</u></h3>
+			<ol>
+				<li>LPG</li>
+				<li>AMMONIA</li>
+				<li>C<sub>O</sub>2</li>
+				<li>HYDROGEN</li>
+				<li>LIN/LOX/LAR/LNG</li>
+				<li>STORAGE AND MOBILE TANG</li>
+			</ol>
+		</div>
+		<div class="items6">
+			<img src="C:\Users\User\Desktop/download.jpg" style="width:883px; height: 608px; border: 1px solid black">
+		</div>
+		<div class="items7">
+			<h3 style="text-align:center"><u>"ABOUT KRISON ENGINEERING"</u></h3>
+			<p>Working with a belief to make our customers satisfied, we initiated our firm, Krison Engineering Works in the year 1979 as the name responsible for manufacturing and supplying Tanks, Reactors and Vessel. The complete fabrication procedure is accomplished under expert guidance using the latest technology and thus, outcomes introduced finally to customers are assured to deliver excellent performance in their usage with assured durability.</p>
+		</div>
+		<div class="items8">
+			<address style="color: whitesmoke;"><u>ADD</u> : 749/9,GIDC,MAKARPURA,VADODARA(Guj)-390 010.INDIA<br><br><br><br><u>ph</u> : +91-265-2636125,2635047.(M)+91-9824391106 FAX:2635047<br><br><br><br><u>EMAIL</u> : mkt@krisonengineering.com,web:krisonengineering.com</address>
+		</div>
+		<div class="items9" style="color: white; text-align: center; padding-top: 80px; font-size: 50px; font-family: bodoni MT Black;"><i class="fa fa-whatsapp"><a href="https://wa.me/919824391106">Whatsapp</a></i> | <i class="fa fa-user"><a href="tel:9824391106">9824391106</a></i></div>
+	</main>
+</body>
+</html>
